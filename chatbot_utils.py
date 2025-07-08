@@ -359,7 +359,8 @@ def generate_sql_query_for_retrieved_tables(selected_docs, user_question, exampl
         8. **Fuzzy matching **-Please use LIKE % incase of fuzzy matching with string for filtering purpose when there is a doubt about actual value/condition. Please prefer LIKE instead of '=' wherever applicable in SQL query.
         9. Please Replace risk_type column with risk_category1 in SQL query if it is there.
         ## User's Question: {question}  
-        ## SQL Query:   
+        ## SQL Query:  
+           
         """,input_variables=["selected_metadata","Question_SQL_Queries_Examples", "question"])
 
     llm_chain_sql = LLMChain(prompt=sql_prompt_template, llm=llm)
