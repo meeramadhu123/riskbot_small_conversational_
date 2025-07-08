@@ -1,0 +1,2 @@
+*.safetensors filter=lfs diff=lfs merge=lfs -text
+xcopy /E /I /Y "C:\Users\acer\Downloads\Risk_chatbot-small_conversational\all-MiniLM-L6-v2".\
