@@ -360,6 +360,7 @@ def generate_sql_query_for_retrieved_tables(selected_docs, user_question, exampl
         9. Please Replace risk_type column with risk_category1 in SQL query if it is there.
         ## User's Question: {question}  
         ## SQL Query:  
+         
            
         """,input_variables=["selected_metadata","Question_SQL_Queries_Examples", "question"])
 
